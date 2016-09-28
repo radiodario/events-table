@@ -1,0 +1,19 @@
+<table class="event-table" data-lastrefreshed="{{last-refreshed-timestamp null}}">
+  <thead>
+    <tr>
+      <th>Ver.</th>
+      <th>Created on</th>
+      <th>Modified on</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Severity</th>
+      <th>Timestamp</th>
+      <th>Tags</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each events as |eventUnit|}}
+      {{event-single event=eventUnit}}
+    {{/each}}
+  </tbody>
+</table>

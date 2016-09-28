@@ -1,0 +1,8 @@
+@import "settings";
+@import 'foundation';
+@include foundation-everything;
+
+$global-flexbox: true;
+
+@include foundation-flex-grid;
+@include foundation-flex-classes;

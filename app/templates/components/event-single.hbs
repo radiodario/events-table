@@ -1,0 +1,31 @@
+<tr class="event">
+  <td class="version">
+    {{event.version}}
+  </td>
+  <td class="createdOn">
+    {{event-date-formatter event.createdOn}}
+  </td>
+  <td class="modifiedOn">
+    {{event-date-formatter event.modifiedOn}}
+  </td>
+  <td class="name">
+    {{event.name}}
+  </td>
+  <td class="description">
+    {{event.description}}
+  </td>
+  <td class="severity">
+    {{event.severity}}
+  </td>
+  <td class="timestamp">
+    {{event.timestamp}}
+  </td>
+  <td class="tags">
+    {{#each-in event.tags as |name value|}}
+      <div class="tag secondary label">
+        {{name}}: <strong>{{value}}</strong>
+      </div>
+    {{/each-in}}
+  </td>
+</tr>
+
