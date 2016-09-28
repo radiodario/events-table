@@ -2,7 +2,7 @@ import DS from 'ember-data';
 import ENV from '../config/environment';
 
 export default DS.RESTAdapter.extend({
-  host: 'https://app-staging.sysdigcloud.com',
+  host: 'http://localhost:5050',
   namespace: 'api',
   headers: {
     'Authorization': `Bearer ${ENV.apiToken}`,
